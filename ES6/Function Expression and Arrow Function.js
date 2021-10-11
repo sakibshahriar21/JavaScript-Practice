@@ -34,3 +34,9 @@ let even_odd_Checker = num => { //if we don't give bracket, we can not pass mult
 }
 
 console.log(even_odd_Checker(1010));
+
+let a = (name) => { 
+    return (age) => console.log(name, age) 
+}
+
+a("Sakib")(24);

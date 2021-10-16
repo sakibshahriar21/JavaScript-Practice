@@ -14,4 +14,3 @@ document.getElementById('sample-button').addEventListener('dblclick', Message); 
 function Message(){
     console.log("Button Clicked");
 }
-

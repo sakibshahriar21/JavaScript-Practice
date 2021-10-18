@@ -26,6 +26,14 @@ re = /x(?=yz)/;
 
 re = /x(?!yz)/;//matchtes x only if x is not before yz
 
+/*
+     * Declare a RegExp object variable named 're'
+     * It must match a string that starts with 'Mr.', 'Mrs.', 'Ms.', 'Dr.', or 'Er.', 
+     * followed by one or more letters.
+     */
+re = new RegExp(/^(Mr\.|Dr\.|Er\.|Ms\.|Mrs\.)\s?[a-z|A-Z]+$/);
+
+
 str = "+8801600000000";
 str = "(#&^";
 str = "(#&v^"; 

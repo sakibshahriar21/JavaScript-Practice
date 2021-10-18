@@ -23,6 +23,32 @@ re = /[^0-9]ello/; //No Digit!
 re = /[0-9][0-9]ello/; //2 digits then ello
 re = /^[0-9][0-9][0-9]ello/; //Must start with 3 digits! then ello
 
+/*
+     * Declare a RegExp object variable named 're'
+     * It must match a string that starts and ends with the same vowel (i.e., {a, e, i, o, u})
+     */
+
+re = /^([aeiou]).*\1$/;
+
+/*1- ^ asserts position at start of the string
+2- 1st Capturing Group ([aeiou])
+3- .* matches any character (except newline) - between zero and unlimited times, as many times as possible, giving back as needed (greedy)
+4- \1 matches the same text as most recently matched by the 1st capturing group
+5- $ asserts position at the end of the string */
+
+/*
+     * Declare a RegExp object variable named 're'
+     * It must match ALL occurrences of numbers in a string.
+     */
+
+re = /([0-9])+/g;
+/*
+        g is used for global search, search
+        for input 999.99 it will give an 
+        output as split as 999, 99
+*/
+
+  
 // Braces {} -> Quantifier
 //Quantifier means ekta jinish koy bar hote hobe
 
